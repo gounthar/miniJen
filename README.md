@@ -1,6 +1,8 @@
 # miniJen
 The Jenkins multi-architecture CPU instance 
 
+<img src="/media/image2.png" style="width:1.76563in;height:1.76563in" />
+
 Nope, it’s not a robot of some sort, it won’t move by itself. It’s not Cerebro from Professor Xavier; no, it can’t fly either.  
 What you’re looking at is a Jenkins “cluster” or “instance”. It is composed of a controller (the “brain”) and three agents (the workers).
 
