@@ -7,8 +7,7 @@ permalink: /about/
 # miniJen
 The Jenkins multi-architecture CPU instance 
 
-{: .center}
-![miniJen logo](/media/image2.png){:.centered height="100" width="100"}
+![miniJen logo](/media/image2.png){:style="display:block; margin-left:auto; margin-right:auto" height="100" width="100"}
 
 Nope, it’s not a robot of some sort, it won’t move by itself. It’s not Cerebro from Professor Xavier; no, it can’t fly either.  
 What you’re looking at is a Jenkins “cluster” or “instance”. It is composed of a controller (the “brain”) and three agents (the workers).
@@ -27,7 +26,7 @@ The boards are all connected thanks to WiFi supplied by a hotspot. You can spot 
   
 Our aarch64 controller supplies the Jenkins dashboard you see on the screen.
 
-<img src="/media/image1.png" style="width:1.76563in;height:1.76563in" />
+![miniJen logo](/media/image1.png){:style="display:block; margin-left:auto; margin-right:auto" height="100" width="100"}
 
 The frame looks strange, I know. I wanted to use a torus because it’s a cool-looking shape, and tentacles because it’s even more cool-looking than a torus.  
 It has been designed thanks to openSCAD, an … open-source computer-aided design tool & language (yes, there is such a thing as 3D Design as code), and printed at home on a printer running an open-source firmware, Marlin.
