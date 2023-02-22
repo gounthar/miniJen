@@ -29,7 +29,7 @@ The controller runs on a [NanoPi R5S](https://www.friendlyelec.com/index.php?rou
 
 ![NanoPi R5S pic from the manufacturer](https://wiki.friendlyelec.com/wiki/images/8/8f/NanoPi_R5S-01B.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="500"}
 
-It’s a 4GB [aarch64](https://en.wikipedia.org/wiki/AArch64) (or `armv8`) [4 cores](https://wiki.friendlyelec.com/wiki/index.php/File:Rockchip_RK3568B2_Datasheet_V1.0.pdf) running [friendlyCore](https://wiki.friendlyelec.com/wiki/index.php/FriendlyCore_(based_on_ubuntu-core_with_Qt)), a distribution from the manufacturer ([friendlyElec](https://friendlyelec.com/)) on a [5.10.x kernel](https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10).  
+It’s a 4GB [`aarch64`](https://en.wikipedia.org/wiki/AArch64) (or `armv8`) [4 cores](https://wiki.friendlyelec.com/wiki/index.php/File:Rockchip_RK3568B2_Datasheet_V1.0.pdf) running [friendlyCore](https://wiki.friendlyelec.com/wiki/index.php/FriendlyCore_(based_on_ubuntu-core_with_Qt)), a distribution from the manufacturer ([friendlyElec](https://friendlyelec.com/)) on a [5.10.x kernel](https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10).  
 
 The smallest board is a 4 cores [`arm32`](https://en.wikipedia.org/wiki/ARM_architecture_family#32-bit_architecture) agent with 512MB of RAM running [Armbian](https://en.wikipedia.org/wiki/Armbian) with a 5.10.x kernel too.
 
