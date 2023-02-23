@@ -18,7 +18,7 @@ The Jenkins multi-architecture CPU instance
 Nope, it’s not a robot of some sort, it won’t move by itself.
 It’s not [Cerebro](https://en.wikipedia.org/wiki/Cerebro) from Professor Xavier; no, it can’t [fly](https://all3dp.com/2/raspbery-pi-drone-simply-explained/) either.
 What you’re looking at is a Jenkins “[cluster](https://www.jenkins.io/doc/book/installing/kubernetes/)” or “[instance](https://www.jenkins.io/doc/#what-is-jenkins)”.
-It is composed of a [controller](https://www.jenkins.io/doc/book/using/using-agents/#using-jenkins-agents) (the “brain” or conductor) and three [agents](https://www.jenkins.io/doc/book/using/using-agents/) (the workers or musicians).
+It is composed of a [controller](https://www.jenkins.io/doc/book/using/using-agents/#using-jenkins-agents) (the “brain” or conductor) and three [agents](https://www.jenkins.io/doc/book/using/using-agents/) (the workers or musicians if we continue a little further with the metaphor).
 
 During [FOSDEM](https://fosdem.org/2023/), we displayed the `aarch64` Jenkins controller dashboard on an another computer screen using the same Wi-Fi network.
 
