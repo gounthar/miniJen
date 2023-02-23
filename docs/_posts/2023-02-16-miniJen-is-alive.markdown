@@ -2,7 +2,8 @@
 layout: post
 title:  "miniJen is alive!"
 date:   2023-02-16 21:43:53 +0100
-categories: miniJen jenkins
+categories: miniJen jenkins riscv arm32 aarch64
+image: assets/images/2023/02/23/fosdem_2023_booth_display.jpg
 ---
 
 ![miniJen logo](/media/image2.png){:style="display:block; margin-left:auto; margin-right:auto" height="100" width="100"}
@@ -60,7 +61,7 @@ How come the controller can contact and control the agents? We're not using IP a
 
 ## What is that big box with cables?
 
-These boards are powered thanks to a [Pine64](https://www.pine64.org/) [power supply](https://www.pine64.org/pinepowerdesktop/) ([open-source hardware](https://en.wikipedia.org/wiki/Open-source_hardware), yes!).
+These boards are powered thanks to a [Pine64](https://www.pine64.org/) [power supply](https://www.pine64.org/pinepowerdesktop/).
 Most of the time, you can see they don’t use much current ([pics, or it didn't happen!](https://www.urbandictionary.com/define.php?term=pics%20or%20it%20didn%27t%20happen)).
 
 ## 3D printed parts
