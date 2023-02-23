@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-![miniJen logo](/media/image2.png){:style="display:block; margin-left:auto; margin-right:auto" height="100" width="100"}
+![miniJen logo](/media/images/2023/02/16/images/2023/02/16/image2.png){:style="display:block; margin-left:auto; margin-right:auto" height="100" width="100"}
 
 # miniJen
 The Jenkins multi-architecture CPU instance 
 
-![miniJen as a FOSDEM display on the booth](/media/fosdem_2023_booth_display.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
+![miniJen as a FOSDEM display on the booth](/media/images/2023/02/16/images/2023/02/16/fosdem_2023_booth_display.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
 
 ## What is that contraption? 
 
@@ -64,7 +64,7 @@ Most of the time, you can see they don’t use much current ([pics, or it didn't
 
 ## 3D printed parts
 
-![The 3DDesign on the 2nd of February 2023](/media/round-booth-display-2023-02-02-transparent.png){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
+![The 3DDesign on the 2nd of February 2023](/media/images/2023/02/16/images/2023/02/16/round-booth-display-2023-02-02-transparent.png){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
 
 The frame looks strange, I know. I wanted to use a torus because it’s a cool-looking shape, and tentacles because it’s even more cool-looking than a torus.  
 It has been designed thanks to [openSCAD](https://openscad.org/), an … open-source [computer-aided design](https://en.wikipedia.org/wiki/Computer-aided_design) tool & language (yes, there is such a thing as 3D Design as code), and printed at home on a [printer](https://eryone.com/fdm/show/1.html) running an open-source firmware, [Marlin](https://marlinfw.org/).
@@ -75,4 +75,4 @@ Should you want to replicate this at home, you can find the [source code](https:
 I have made a few [live streams](https://www.youtube.com/@jeanquinze/streams) during the build of miniJen, and should do some more for the upcoming modifications.
 I also have a few videos on the same [channel](https://www.youtube.com/@jeanquinze/featured) about Jenkins and other boards, so don't hesitate to have a look.
 
-[![miniJen logo](/media/image1.png){:style="display:block; margin-left:auto; margin-right:auto" height="100" width="100"}](https://www.youtube.com/@jeanquinze/streams)
+[![miniJen logo](/media/images/2023/02/16/images/2023/02/16/image1.png){:style="display:block; margin-left:auto; margin-right:auto" height="100" width="100"}](https://www.youtube.com/@jeanquinze/streams)
