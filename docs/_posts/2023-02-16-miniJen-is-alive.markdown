@@ -22,6 +22,7 @@ It is composed of a [controller](https://www.jenkins.io/doc/book/using/using-age
 
 During [FOSDEM](https://fosdem.org/2023/), we displayed the `aarch64` Jenkins controller dashboard on an another computer screen using the same Wi-Fi network.
 
+This Jenkins instance was featured in the [Hackaday blog post](https://hackaday.com/2023/03/01/fosdem-2023-an-open-source-conference-literally/) about FOSDEM.
 
 These boards are not [microcontrollers](https://en.wikipedia.org/wiki/Microcontroller), they are miniature computers running [GNU/Linux](https://en.wikipedia.org/wiki/Linux), like the infamous [Raspberry Pi](https://en.wikipedia.org/wiki/Raspberry_Pi).
 
