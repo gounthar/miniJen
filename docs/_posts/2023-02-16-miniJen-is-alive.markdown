@@ -62,8 +62,10 @@ How come the controller can contact and control the agents? We're not using IP a
 
 ## What is that big box with cables?
 
+![PinePower powering very astemious boards](/media/images/2023/02/16/pine-power.png){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
+
 These boards are powered thanks to a [Pine64](https://www.pine64.org/) [power supply](https://www.pine64.org/pinepowerdesktop/).
-Most of the time, you can see they don’t use much current ([pics, or it didn't happen!](https://www.urbandictionary.com/define.php?term=pics%20or%20it%20didn%27t%20happen)).
+Most of the time, you can see they don’t use much current.
 
 ## 3D printed parts
 
