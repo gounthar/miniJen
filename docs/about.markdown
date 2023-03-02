@@ -28,25 +28,25 @@ These boards are not [microcontrollers](https://en.wikipedia.org/wiki/Microcontr
 
 The controller runs on a [NanoPi R5S](https://www.friendlyelec.com/index.php?route=product/product&product_id=287), sold as a [router](https://en.wikipedia.org/wiki/Router_(computing)) (thus the three [RJ45](https://en.wikipedia.org/wiki/Modular_connector#8P8C) connectors).
 
-![NanoPi R5S pic from the manufacturer](https://wiki.friendlyelec.com/wiki/images/8/8f/NanoPi_R5S-01B.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="500"}
+![NanoPi R5S pic from the manufacturer](/media/images/2023/02/16/NanoPi_R5S-01B.png){:style="display:block; margin-left:auto; margin-right:auto" width="500"}
 
 It’s a 4GB [`aarch64`](https://en.wikipedia.org/wiki/AArch64) (or `armv8`) [4 cores](https://wiki.friendlyelec.com/wiki/index.php/File:Rockchip_RK3568B2_Datasheet_V1.0.pdf) running [friendlyCore](https://wiki.friendlyelec.com/wiki/index.php/FriendlyCore_(based_on_ubuntu-core_with_Qt)), a distribution from the manufacturer ([friendlyElec](https://friendlyelec.com/)) on a [5.10.x kernel](https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.10).  
 
 The smallest board is a 4 cores [`arm32`](https://en.wikipedia.org/wiki/ARM_architecture_family#32-bit_architecture) agent with 512MB of RAM running [Armbian](https://en.wikipedia.org/wiki/Armbian) with a 5.10.x kernel too.
 
-![NanoPi Duo2 pic from the manufacturer](https://wiki.friendlyelec.com/wiki/images/0/04/NanoPi_Duo2-2.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="500"}
+![NanoPi Duo2 pic from the manufacturer](/media/images/2023/02/16/NanoPi_Duo2-2.png){:style="display:block; margin-left:auto; margin-right:auto" width="500"}
 
 It's also a board coming from the [friendlyElec](https://friendlyelec.com/) manufacturer, the [NanoPi Duo2](https://www.friendlyelec.com/index.php?route=product/product&path=69&product_id=244&sort=p.price&order=ASC).
 
 The pink board next to the `arm32` board is a [`RISC-V`](https://en.wikipedia.org/wiki/RISC-V) board running [Armbian](https://forum.armbian.com/topic/21465-armbian-image-and-build-support-for-risc-v/) with just 1 core, 1GB of RAM and a [6.1.x kernel](https://cdn.kernel.org/pub/linux/kernel/v6.x/ChangeLog-6.1).
 
-![MangoPi MQ-Pro pic from the manufacturer](https://mangopi.org/_media/img_0363_-2048.jpg?w=800&tok=39dc16){:style="display:block; margin-left:auto; margin-right:auto" width="500"}
+![MangoPi MQ-Pro pic from the manufacturer](/media/images/2023/02/23/mq-pro.png){:style="display:block; margin-left:auto; margin-right:auto" width="500"}
 
 It's a MangoPi [MQ-Pro](https://mangopi.org/mqpro) from [MangoPi](https://mangopi.org/), one of the first `RISC-V` boards available.
 
 The latest board just next to the `RISC-V` board with a slightly different shade of pink is an `aarch64` board also from [MangoPi](https://mangopi.org/).
 
-[![MangoPi MQ-Quad pic from a taobao store](http://img.alicdn.com/imgextra/i1/479269519/O1CN01kCi5J32KBkxWQCuuc_!!479269519.jpg){:style="display:block; margin-left:auto; margin-right:auto" width="500"}](https://world.taobao.com/item/662901818090.htm)
+[![MangoPi MQ-Quad pic from a taobao store](/media/images/2023/02/16/mq-quad.png){:style="display:block; margin-left:auto; margin-right:auto" width="500"}](https://world.taobao.com/item/662901818090.htm)
 
 It is a 4 cores agent with 1GB of RAM running a fork of Armbian with [kernel 5.16.x](https://cdn.kernel.org/pub/linux/kernel/v5.x/ChangeLog-5.16).
 It's a [MangoPi MQ-Quad](https://mangopi.org/mqquad).
