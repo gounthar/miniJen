@@ -154,7 +154,10 @@ I then [added an `ssh` key](https://www.youtube.com/live/xtI1nwwe70A?feature=sha
 #### Testing
 
 The last thing to do before asserting Jenkins works on `RISC-V` was to launch a [simple `RISC-V` job](https://www.youtube.com/live/xtI1nwwe70A?feature=share&t=3383). \
-Spoiler alert, it did work! \
+Spoiler alert, it did work!
+
+![Simplest RISC-V job ever](/media/images/2023/02/23/simplest-riscv-job-possible.png){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
+
 The next stop was to install a [Pipeline](https://www.jenkins.io/doc/book/pipeline/) that [downloads](https://github.com/gounthar/jenkins-temurin-riscv/blob/main/Jenkinsfile#L7) the latest [nightly build of Temurin openJDK20](https://github.com/adoptium/temurin20-binaries/tree/6855a34aca01a3368b3feaf138784ea3a4c08c99) and installs it on the `RISC-V` machine, overriding the one I installed earlier. \
 This is done mostly thanks to the [`gh` command line tool](https://github.com/cli/cli) that can do wonders when it comes to interacting with GitHub on the command line.
 
@@ -165,7 +168,10 @@ Well, it's open-source, and Ubuntu has a [source package](https://packages.ubunt
 Even if I can't see the binary package for `RISC-V` on the [Ubuntu package page](https://packages.ubuntu.com/lunar/gh), it magically appeared on my machine after an `apt install gh`.
 
 The Pipeline uses openJDK19 to update openJDK20, and openJDK20 to update openJDK19. The main Jenkins process is still running on the Zero VM openJDK17. That's something I'll have to address later on. \
-That part worked, and I was pretty happy about the result. \
+That part worked, and I was pretty happy about the result.
+
+![OpenJDK RISC-V](/media/images/2023/02/23/openjdk-job.png){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
+
 But what about a smoke test? \
 I mean, I'm not going to use Jenkins on `RISC-V` if I can't build a real-life project with it, right? \
 I asked in the community, and [Mark Waite](https://www.jenkins.io/blog/authors/markewaite/), [Basil Crow](https://www.jenkins.io/blog/authors/basil/), and [Damien Duportal](https://www.jenkins.io/blog/authors/dduportal/) all agreed that the best way to test Jenkins on `RISC-V` was to build a few Jenkins plugins with it. \
@@ -195,6 +201,11 @@ I've finally done my homework and found out that Jenkins has been running on `RI
 
 Why have these experiment proofs been removed? Is that a coincidence or am I acting undercover to remove any evidence of Jenkins running on `RISC-V` before I attempt to do the same? \
 Just kidding, I have no idea, but if three years ago some people were able to run Jenkins on `RISC-V`, I should be able to do the same today.
+
+The `RISC-V` board I've been using for this experiment is not the most powerful available on the market, so my success rate with Jenkins plugins was not very high. \
+I have another board which is way more powerful, so I'll try again with it soon. It's the [StarFive VisionFive 2](https://www.starfivetech.com/en/site/boards) board which is based on a quad core `RISC-V` processor (the [StarFive JH7110](https://www.starfivetech.com/en/site/soc) 64 bit SoC with RV64GC). \
+It also sports 8GB of LPDDR4 so that I should be able to build a few RAM-hungry Jenkins plugins with it, and why not, even run a Jenkins controller on it. \
+I have another board on my radar; it's the Vision Five 2's twin from Pine64, the [Star64](https://wiki.pine64.org/wiki/STAR64). At the time of the writing, it's not available yet, but I'll definitely get one as soon as it's available.
 
 ### When will `RISC-V` be a first-class citizen with Jenkins?
 
