@@ -1,10 +1,10 @@
----  
-layout: post  
-title:  "miniJen and RISC-V"  
-date:   2023-02-23 21:43:53 +0100  
-categories: miniJen jenkins risc-v  
+---
+layout: post    
+title:  "miniJen and RISC-V"    
+date:   2023-02-23 21:43:53 +0100    
+categories: miniJen jenkins risc-v    
 image: assets/images/2023/02/23/fosdem_2023_booth_display.jpg
----  
+---   
 
 ![miniJen logo](/media/images/2023/02/16/image2.png){:style="display:block; margin-left:auto; margin-right:auto" height="100" width="100"}
 
@@ -24,32 +24,32 @@ Later on, when resin.io (now [balena.io](https://blog.balena.io/resin-io-changes
 
 ![Docker on arm](/media/images/2023/02/23/docker-on-arm.png){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
 
-I spent way too much time compiling FOSS for `arm32` and `aarch64`, and building docker images around them.  
-It was fun, it was exploratory, it was a way to learn new things... and it was a way to contribute to the FOSS community.  
+I spent way too much time compiling FOSS for `arm32` and `aarch64`, and building docker images around them.    
+It was fun, it was exploratory, it was a way to learn new things... and it was a way to contribute to the FOSS community.    
 I made a lot of friends, and I gained a lot of knowledge. \
-I sometimes had to recompile gcc with ... gcc to be able to recompile ffmpeg for example, and one thing led to another, I had to recompile a library, then another, then a utility, then another library, then the kernel, then another library...  
+I sometimes had to recompile gcc with ... gcc to be able to recompile ffmpeg for example, and one thing led to another, I had to recompile a library, then another, then a utility, then another library, then the kernel, then another library...    
 Boy, that was fun! \
-These were good times. I may sound nostalgic, and I think I am.  
-It was hard, but you got immediate or delayed benefits because then everybody was benefiting from the community work.  
-Be it for energy saving, IoT, Edge Computing, server rooms, Cloud, or just for fun, arm was bound to be everywhere.  
+These were good times. I may sound nostalgic, and I think I am.    
+It was hard, but you got immediate or delayed benefits because then everybody was benefiting from the community work.    
+Be it for energy saving, IoT, Edge Computing, server rooms, Cloud, or just for fun, arm was bound to be everywhere.    
 It was the future.
 
 Colleagues (who happen to be also friends, go figure) used to call me "_mister WhatIf_". Yes, I had way too many ideas, but if you want to find one of these days a good idea, you have to let tons of ideas, good or bad, make their way into the world. \
-So yes, basically, I was spending most of my free time asking myself (and friends) "_What if...?_".  
+So yes, basically, I was spending most of my free time asking myself (and friends) "_What if...?_".    
 These "_What if...?_" lead most of the time to an implementation on an arm SBC, because they were cheap and available at that time. \
 Some of these experiments were successful, and some were not (frankly, hosting a complete Gitlab server on a Raspberry Pi 3B was stupid), but I learned a lot from them.
 
-Back to arm: when the future becomes the present, it's not that exciting anymore.  
+Back to arm: when the future becomes the present, it's not that exciting anymore.    
 Arm is not yet as [boring](https://twitter.com/jonmasters/status/1523041597683683328) as X86, but most of the software now works on arm, from microcontrollers to the Cloud, and the very last conquest to be made ([laptops](https://arstechnica.com/gadgets/2022/02/lenovo-announces-the-first-arm-based-thinkpad/) and even [MacBook](https://www.apple.com/macbook-air-m2/)) has been won. \
 If you don't own any arm hardware, nothing can stop you from developing for this architecture anymore thanks to [QEMU](https://www.qemu.org/docs/master/system/target-arm.html) and [Docker](https://docs.docker.com/build/building/multi-platform/). \
-It's not that hard to compile the software for arm anymore.  
-It's not that exciting anymore.  
-It's not that fun anymore.  
-It's not that exploratory anymore.  
-It's not that rewarding anymore.  
-It's not that challenging anymore.  
-It's not that cool anymore.  
-It's not that sexy anymore.  
+It's not that hard to compile the software for arm anymore.    
+It's not that exciting anymore.    
+It's not that fun anymore.    
+It's not that exploratory anymore.    
+It's not that rewarding anymore.    
+It's not that challenging anymore.    
+It's not that cool anymore.    
+It's not that sexy anymore.    
 It's not that... well, you get the point. \
 I still love the arm ecosystem and all the people I've met, but it feels like the honeymoon time is gone, we're in a more platonic relationship now. It is stable, deep, and true, (I love the [arm community](https://www.arm.com/resources/developer-program)!) but the time has come to find another quest.
 
@@ -84,7 +84,7 @@ Yes, this was once again possible, new territories to explore, new challenges to
 I had seen in the [news](https://twitter.com/bretweber/status/1559631172623278081) that Ubuntu 22.04 was supplying a `RISC-V` image that could work for this board (designed for the [AllWinner Nezha](https://linux-sunxi.org/Allwinner_Nezha)). The Nezha was the first [D1](https://linux-sunxi.org/D1)-based board made available to the public. The MangoPi MQ-Pro came after that but shares more or less the same set of components. \
 As strange as it may seem (a `RISC-V` build by an `Arm`bian contributor), I also found an [image](https://forum.armbian.com/topic/21465-armbian-image-and-build-support-for-risc-v/) built by a regular contributor of Armbian, [balbes150](https://forum.armbian.com/profile/1215-balbes150/). I started by downloading [`Armbian_22.08.0-trunk_Nezha_jammy_current_6.1.0_xfce_desktop.img`](https://www.youtube.com/live/xtI1nwwe70A?feature=share&t=333) from December 06, 2002, burnt it thanks to [Balena Etcher](https://www.balena.io/etcher) and was able to [boot](https://www.youtube.com/live/xtI1nwwe70A?feature=share&t=663) the board. \
 [bret.dk](https://twitter.com/bretweber) gave me an interesting pointer to [James A. Chambers](https://jamesachambers.com/) [blog post](https://jamesachambers.com/mangopi-mq-pro-d1-ubuntu-preview/) about the Ubuntu Preview for RISC-V. \
-In the blog post from James A. Chambers, there is a paragraph about OpenJDK Availability for RISC-V, and we can see that there is a wide range of OpenJDK versions (from 11 to 20) available here.   
+In the blog post from James A. Chambers, there is a paragraph about OpenJDK Availability for RISC-V, and we can see that there is a wide range of OpenJDK versions (from 11 to 20) available here.     
 That was unexpected, I thought I would have to compile everything from scratch, make changes to the build system, and so on.
 
 ![MangoPi MQ-Pro pic from the manufacturer](/media/images/2023/02/23/mq-pro.png){:style="display:block; margin-left:auto; margin-right:auto" width="500"}
@@ -99,8 +99,8 @@ What was I to do? \
 Once again, bret.dk came to the rescue. \
 Bret does tons of reviews on [his blog](https://bret.dk/) and I found [one](https://bret.dk/waveshare-raspberry-pi-usb-ethernet-hat-review/) about an Ethernet/USB hat for the Raspberry Pi Zero W. \
 I bought the same hat, a USB-C hub just in case, and a mini-HDMI cable. \
-The hat never worked for me for some reason, but the USB-C hub did.  
-It's an almost-no-name [generic hub](https://www.amazon.fr/gp/product/B08GM2H1Q2), but it worked.  
+The hat never worked for me for some reason, but the USB-C hub did.    
+It's an almost-no-name [generic hub](https://www.amazon.fr/gp/product/B08GM2H1Q2), but it worked.    
 I managed to get Ethernet on it so that my board got an IP address from my router.
 
 ### Linux and Java installation
@@ -128,19 +128,19 @@ Zero VM builds come with pros and cons.
 * [Zero VM](https://openjdk.org/projects/zero/) is part of the [OpenJDK project](https://openjdk.org/), which is an open-source implementation of the Java SE platform. Zero VM uses a technique called "interpreter-only" mode, which allows it to run on platforms that do not support just-in-time (JIT) compilation.
 * In interpreter-only mode, Zero VM executes Java bytecode directly, without compiling it to native code (it does not use any assembler). This approach typically results in slower performance compared to [JIT](https://developers.redhat.com/articles/2021/06/23/how-jit-compiler-boosts-java-performance-openjdk)-enabled VMs, but it has the advantage of being able to run on a wider range of platforms. That's why the developers got a working OpenJDK to build _this early_ for RISC-V.
 
-So, as much as I'm grateful for the Zero VM build, I'm also curious to see how Temurin's builds perform on this board.  
-Said in another way, the board is already so slow that using a Zero VM will make it unusable.  
+So, as much as I'm grateful for the Zero VM build, I'm also curious to see how Temurin's builds perform on this board.    
+Said in another way, the board is already so slow that using a Zero VM will make it unusable.    
 There, I said it. \
 The default OpenJDK implementation is there just in case I need to use it for some reason, but I plan to only use Temurin's builds.
 
 ##### OpenJDK 19
 
 As you may already know, JDK19 is almost [end of life](https://endoflife.date/java) (21st of March 2023), so I'm not going to use it for long, and Temurin does not provide steady `RISC-V` nightly builds. \
-Speaking of end-of-life, I could not recommend enough [endoflife.date](https://endoflife.date/) which is an [open-source](https://github.com/endoflife-date/endoflife.date) project that aims to provide a simple way to find the end-of-life dates of software and operating systems.  
-It even provides an [API](https://endoflife.date/docs/api) to query the data.  
+Speaking of end-of-life, I could not recommend enough [endoflife.date](https://endoflife.date/) which is an [open-source](https://github.com/endoflife-date/endoflife.date) project that aims to provide a simple way to find the end-of-life dates of software and operating systems.    
+It even provides an [API](https://endoflife.date/docs/api) to query the data.    
 Thanks a lot to [Mark Waite](https://www.jenkins.io/blog/authors/markewaite/) for letting me know about this project. \
 Back to openJDK19, how did I find the last `RISC-V` published nightly build? \
-While discussing with [Stewart Addison](https://twitter.com/sxaTech) on various GitHub issues related to Temurin on`RISC-V` (and `aarch64`) and later on through Temurin's [Slack channel](https://adoptium.net/slack/), we sympathized.  
+While discussing with [Stewart Addison](https://twitter.com/sxaTech) on various GitHub issues related to Temurin on`RISC-V` (and `aarch64`) and later on through Temurin's [Slack channel](https://adoptium.net/slack/), we sympathized.    
 He mentioned that he had the same board as me, and gave me a link to the [latest`RISC-V` build](https://ci.adoptopenjdk.net/job/build-scripts/job/jobs/job/jdk19u/job/jdk19u-linux-riscv64-temurin/14/) he could find. \
 So, that's the version [I'm using](https://www.youtube.com/live/xtI1nwwe70A?feature=share&t=2565) for now. \
 Please note that your libc should be at least [`2.35`](https://sourceware.org/pipermail/libc-alpha/2022-February/136040.html) for this build to work.
@@ -161,7 +161,7 @@ Spoiler alert, it did work!
 The next stop was to install a [Pipeline](https://www.jenkins.io/doc/book/pipeline/) that [downloads](https://github.com/gounthar/jenkins-temurin-riscv/blob/main/Jenkinsfile#L7) the latest [nightly build of Temurin openJDK20](https://github.com/adoptium/temurin20-binaries/tree/6855a34aca01a3368b3feaf138784ea3a4c08c99) and installs it on the `RISC-V` machine, overriding the one I installed earlier. \
 This is done mostly thanks to the [`gh` command line tool](https://github.com/cli/cli) that can do wonders when it comes to interacting with GitHub on the command line.
 
-`gh` is open-source, and it's available even for `RISC-V`, but not directly in the [`gh` GitHub releases](https://github.com/cli/cli/releases).  
+`gh` is open-source, and it's available even for `RISC-V`, but not directly in the [`gh` GitHub releases](https://github.com/cli/cli/releases).    
 As far as I know, `go` is [not yet officially available](https://go.dev/dl/) for `RISC-V`, and `gh` is written in `go`. \
 So... What's the catch? \
 Well, it's open-source, and Ubuntu has a [source package](https://packages.ubuntu.com/source/lunar/gh) for it. \
@@ -175,10 +175,10 @@ That part worked, and I was pretty happy about the result.
 But what about a smoke test? \
 I mean, I'm not going to use Jenkins on `RISC-V` if I can't build a real-life project with it, right? \
 I asked in the community, and [Mark Waite](https://www.jenkins.io/blog/authors/markewaite/), [Basil Crow](https://www.jenkins.io/blog/authors/basil/), and [Damien Duportal](https://www.jenkins.io/blog/authors/dduportal/) all agreed that the best way to test Jenkins on `RISC-V` was to build a few Jenkins plugins with it. \
-I started with an ambitious project, the [git plugin](https://plugins.jenkins.io/git/) itself.  
-Well, it was quite big and not ready for openJDK19, so I switched to a smaller one, the [git client plugin](https://plugins.jenkins.io/git-client/).   
+I started with an ambitious project, the [git plugin](https://plugins.jenkins.io/git/) itself.    
+Well, it was quite big and not ready for openJDK19, so I switched to a smaller one, the [git client plugin](https://plugins.jenkins.io/git-client/).     
 Same player, play again. It did not go well either. \
-I then switched to a very basic one, the [infrastructure test plugin](https://plugins.jenkins.io/jenkins-infra-test/), which is used to test the Jenkins infrastructure as its name implies.   
+I then switched to a very basic one, the [infrastructure test plugin](https://plugins.jenkins.io/jenkins-infra-test/), which is used to test the Jenkins infrastructure as its name implies.     
 Bad luck once again, as it was not ready for open JDK19 either. \
 In desperation, I switched to the [Platform Labeler](https://plugins.jenkins.io/platformlabeler/) which is ready for openJDK17, but... it required way too much memory to be built. \
 Bummer! \
@@ -203,9 +203,9 @@ Why have these experiment proofs been removed? Is that a coincidence or am I act
 Just kidding, I have no idea, but if three years ago some people were able to run Jenkins on `RISC-V`, I should be able to do the same today.
 
 The `RISC-V` board I've been using for this experiment is not the most powerful available on the market, so my success rate with Jenkins plugins was not very high. \
-I have another board which is way more powerful, so I'll try again with it soon. It's the [StarFive VisionFive 2](https://www.starfivetech.com/en/site/boards) board which is based on a quad core `RISC-V` processor (the [StarFive JH7110](https://www.starfivetech.com/en/site/soc) 64 bit SoC with RV64GC). \
-It also sports 8GB of LPDDR4 so that I should be able to build a few RAM-hungry Jenkins plugins with it, and why not, even run a Jenkins controller on it. \
-I have another board on my radar; it's the Vision Five 2's twin from Pine64, the [Star64](https://wiki.pine64.org/wiki/STAR64). At the time of the writing, it's not available yet, but I'll definitely get one as soon as it's available.
+I have another board that is way more powerful, so I'll try again with it soon. It's the [StarFive VisionFive 2](https://www.starfivetech.com/en/site/boards) board which is based on a quad-core `RISC-V` processor (the [StarFive JH7110](https://www.starfivetech.com/en/site/soc) 64 bit SoC with RV64GC). \
+It also sports 8GB of LPDDR4 so I should be able to build a few RAM-hungry Jenkins plugins with it, and why not, even run a Jenkins controller on it. \
+I have another board on my radar; it's the Vision Five 2's twin from Pine64, the [Star64](https://wiki.pine64.org/wiki/STAR64). At the time of writing, it's not available yet, but I'll definitely get one as soon as it's available.
 
 ### When will `RISC-V` be a first-class citizen with Jenkins?
 
@@ -213,9 +213,9 @@ Remember, Jenkins is an open-source project, but above all, it's a community pro
 Who am I to tell you when `RISC-V` will be a first-class citizen with Jenkins? \
 I'm just a guy who's trying to make it work. \
 I think it's up to the community to decide when `RISC-V` will be officially supported by Jenkins. My guess would be when two major conditions are met:
-* Temurin is officially available for `RISC-V`, which means we'll be able to download a binary package for `RISC-V` from the [official AdoptOpenJDK website](https://adoptium.net/temurin/releases/).  
+* Temurin is officially available for `RISC-V`, which means we'll be able to download a binary package for `RISC-V` from the [official AdoptOpenJDK website](https://adoptium.net/temurin/releases/).    
   ![Temurin supported architectures](/media/images/2023/02/23/temurin-supported-architectures.png){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
-* Docker is officially available for `RISC-V`, which means we'll be able to download a binary package for `RISC-V` from the [official Docker website](https://hub.docker.com/search?q=&type=image&image_filter=official).  
+* Docker is officially available for `RISC-V`, which means we'll be able to download a binary package for `RISC-V` from the [official Docker website](https://hub.docker.com/search?q=&type=image&image_filter=official).    
   ![Docker supported architectures](/media/images/2023/02/23/docker-supported-architectures.png){:style="display:block; margin-left:auto; margin-right:auto" width="839"}
 
 You may wonder, why I need Temurin and Docker to be officially available for `RISC-V` before saying Jenkins [supports](https://www.jenkins.io/sigs/platform/) `RISC-V`? \
@@ -225,7 +225,7 @@ As you know, the Java motto says:
 It's often abbreviated as "WORA". This motto reflects Java's ability to be compiled into bytecode that can run on any platform with a Java Virtual Machine (JVM), without requiring recompilation for each specific platform. The Jenkins war runs on top of the JVM; it is then considered CPU-architecture agnostic, which means it can run on any CPU architecture (as long as openJDK11+ can run on the machine, but take it with a grain of salt). \
 The Jenkins infrastructure owns (or borrows) machines of the supported CPU architectures and runs the war on them, so we can testify Jenkins works on these architectures. \
 Jenkins also supplies [Docker images](https://hub.docker.com/r/jenkins/jenkins) for the supported CPU architectures and tests them on the supported CPU architectures. \
-The Jenkins project does not own any `RISC-V` machine, as far as I know.  
-We could provide a `RISC-V` docker image, as `docker buildx` allows us to build for various CPU architectures, but... Wouldn't it be kind of hasty?  
+The Jenkins project does not own any `RISC-V` machine, as far as I know.    
+We could provide a `RISC-V` docker image, as `docker buildx` allows us to build for various CPU architectures, but... Wouldn't it be kind of hasty?    
 We wouldn't be able to test on a Jenkins-owned, Jenkins-managed machine regularly. \
 It is then urgent to ... wait.
