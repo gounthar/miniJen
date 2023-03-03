@@ -75,7 +75,7 @@ That sounded way too fun not to try... especially since the board was basically 
 I then felt the same level of excitement I used to feel when I was working on `arm32` and `aarch64`. \
 Yes, this was once again possible, new territories to explore, new challenges to face, new friends to make, new knowledge to gain. 
 
-![MQ-Pro Unboxing](https://youtu.be/qdHSuClqtic?width=720) 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qdHSuClqtic" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## The `RISC-V` journey
 
@@ -214,7 +214,7 @@ As you know, the Java motto says:
 It's often abbreviated as "WORA". This motto reflects Java's ability to be compiled into bytecode that can run on any platform with a Java Virtual Machine (JVM), without requiring recompilation for each specific platform. The Jenkins war runs on top of the JVM; it is then considered CPU-architecture agnostic, which means it can run on any CPU architecture (as long as openJDK11+ can run on the machine, but take it with a grain of salt). \
 The Jenkins infrastructure owns (or borrows) machines of the supported CPU architectures, and runs the war on them, so we can testify Jenkins works on these architectures. \
 Jenkins also supplies [Docker images](https://hub.docker.com/r/jenkins/jenkins) for the supported CPU architectures, and tests them on the supported CPU architectures. \
-Jenkins does not own any `RISC-V` machine, as far as I know.
+The Jenkins project does not own any `RISC-V` machine, as far as I know.
 We could provide a `RISC-V` docker image, as `docker buildx` allows us to build for various CPU architectures, but... Wouldn't it be kind of hasty?
 We wouldn't be able to test on a Jenkins-owned, Jenkins-managed machine on a regular basis. \
 It is then urgent to ... wait.
